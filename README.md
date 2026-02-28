@@ -54,3 +54,62 @@ npx electron-packager . --icon=assets/icon.ico --prune=true
 ## Autor
 
 mac
+
+---
+
+# Stocks App: Electron Basics (English)
+
+A desktop application for managing and monitoring stock prices with real-time chart display and notification functionality.
+
+## Features
+
+- **Stock Database** – Store and search stocks locally by symbol and name
+- **Price Charts** – Display daily price data as line charts (via Alpha Vantage API)
+- **Notifications** – Set upper and lower price limits for stocks and monitor them
+- **System Tray** – App continues running in the background via the tray icon
+
+## Technologies
+
+| Technology | Usage |
+|---|---|
+| [Electron](https://www.electronjs.org/) | Desktop app framework |
+| [Alpha Vantage API](https://www.alphavantage.co/) | Stock price data |
+| [Chart.js](https://www.chartjs.org/) | Chart rendering |
+| [Bulma](https://bulma.io/) | CSS framework |
+| [electron-db](https://github.com/nicholasgasior/electron-db) | Local JSON database |
+| [dotenv](https://github.com/motdotla/dotenv) | Environment variable management |
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (incl. npm)
+- An [Alpha Vantage API key](https://www.alphavantage.co/support/#api-key)
+
+## Installation
+
+```bash
+git clone https://github.com/Mac80Mo/Electron-Stocks-App.git
+cd Electron-Stocks-App
+npm install
+```
+
+Create a `.env` file in the project directory:
+
+```
+ALPHAVANTAGE_API_KEY=your_api_key
+```
+
+## Run
+
+```bash
+npm start
+```
+
+## Build
+
+```bash
+npx electron-packager . --icon=assets/icon.ico --prune=true
+```
+
+## Author
+
+mac
