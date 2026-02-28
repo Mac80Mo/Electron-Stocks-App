@@ -1,0 +1,5 @@
+.env
+node_modules/
+aktien_app-linux-x64/
+aktien_app-win32-x64/
+aktien_app-darwin-x64/
